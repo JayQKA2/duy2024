@@ -10,14 +10,14 @@
 
     <FrameLayout
         android:id="@+id/container"
-        android:layout_width="418dp"
-        android:layout_height="659dp"
+        android:layout_width="311dp"
+        android:layout_height="605dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.974">
+        app:layout_constraintVertical_bias="0.805">
 
     </FrameLayout>
 
