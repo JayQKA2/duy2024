@@ -2,15 +2,14 @@ package vn.edu.usth.weather;
 
 import android.os.Bundle;
 import android.util.Log;
-import androidx.activity.EdgeToEdge;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import vn.edu.usth.weather.ForecastFragment;
+import com.google.android.material.tabs.TabLayout;
+
+import vn.edu.usth.weather.Fragment.WeatherAdapter;
 
 public class WeatherActivity extends AppCompatActivity {
 
@@ -35,6 +34,14 @@ public class WeatherActivity extends AppCompatActivity {
         ViewPager viewPager = findViewById(R.id.view_pager);
         FragmentPagerAdapter adapter = new WeatherAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
+
+        TabLayout tabLayout = findViewById(R.id.tab);
+        tabLayout.setupWithViewPager(viewPager);
+
+        tabLayout.getTabAt(0).setText("View");
+        tabLayout.getTabAt(1).setText("Ha Noi");
+        tabLayout.getTabAt(2).setText("Paris");
+        tabLayout.getTabAt(3).setText("Spain");
     }
 
     @Override
