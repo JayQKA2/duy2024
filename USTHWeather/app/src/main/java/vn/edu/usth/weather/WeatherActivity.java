@@ -7,6 +7,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import vn.edu.usth.weather.ForecastFragment;
 
 public class WeatherActivity extends AppCompatActivity {
@@ -17,16 +20,21 @@ public class WeatherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.i(TAG, "onCreate");
-        EdgeToEdge.enable(this);
+//        EdgeToEdge.enable(this);
+//        setContentView(R.layout.activity_weather);
+//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+//            return insets;
+//        });
+//
+//        ForecastFragment firstFragment = new ForecastFragment();
+//        getSupportFragmentManager().beginTransaction().add(R.id.container, firstFragment).commit();
         setContentView(R.layout.activity_weather);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
-        ForecastFragment firstFragment = new ForecastFragment();
-        getSupportFragmentManager().beginTransaction().add(R.id.container, firstFragment).commit();
+        ViewPager viewPager = findViewById(R.id.view_pager);
+        FragmentPagerAdapter adapter = new WeatherAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
     }
 
     @Override
