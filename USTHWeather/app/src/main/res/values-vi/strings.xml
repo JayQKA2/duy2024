@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Thời tiết USTH</string>
+    <string name="tab_layout_description">Bố cục tab cho thời tiết và dự báo</string>
+    <string name="view_pager_description">ViewPager thời tiết và dự báo</string>
+    <string name="tab_view">Thời Tiết</string>
+    <string name="tab_hanoi">Hà Nội</string>
+    <string name="tab_paris">Paris</string>
+    <string name="tab_spain">Tây Ban Nha</string>
+    <string name="weather_title">Dự Báo Thời tiết USTH</string>
+    <string name="day_mon">THỨ HAI</string>
+    <string name="day_tue">THỨ BA</string>
+    <string name="day_wed">THỨ TƯ</string>
+    <string name="day_thu">THỨ NĂM</string>
+    <string name="day_fri">THỨ SÁU</string>
+    <string name="day_sat">THỨ BẢY</string>
+    <string name="day_sun">CHỦ NHẬT</string>
+    <string name="weather_cloudy">Nhiều mây\n 23°C – 31°C</string>
+    <string name="weather_windy">Có gió\n 20°C – 27°C</string>
+    <string name="weather_rainy">Có mưa\n 14°C – 29°C</string>
+    <string name="weather_sunny">Nắng\n 25°C – 31°C</string>
+</resources>

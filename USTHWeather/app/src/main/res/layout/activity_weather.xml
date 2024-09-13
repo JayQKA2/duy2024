@@ -1,3 +1,4 @@
+<!-- res/layout/activity_weather.xml -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,21 +11,21 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#3F51B5"
+        android:background="@color/Primary"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:layout_width="248dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="15dp"
+            android:layout_width="@dimen/layout_width_large"
+            android:layout_height="@dimen/layout_height_large"
+            android:layout_marginStart="@dimen/margin_medium"
             android:layout_weight="3"
             android:gravity="center_vertical"
-            android:text="USTH Weather"
-            android:textColor="@color/white"
-            android:textSize="25sp"
+            android:text="@string/weather_title"
+            android:textColor="@color/White"
+            android:textSize="@dimen/text_size_large"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -33,7 +34,7 @@
         android:id="@+id/tab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="Tap Layout"
+        android:contentDescription="@string/tab_layout_description"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -42,43 +43,8 @@
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:contentDescription="Weather and Forecast ViewPager"
+        android:contentDescription="@string/view_pager_description"
         app:layout_constraintTop_toBottomOf="@+id/tab"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-    <!--    <fragment-->
-    <!--        android:id="@+id/weather_fragment"-->
-    <!--        android:name="vn.edu.usth.weather.WeatherFragment"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="224dp"-->
-    <!--        android:layout_marginTop="4dp"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />-->
-
-    <!--    <FrameLayout-->
-    <!--        android:id="@+id/container"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="0dp"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="0.5"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/weather_fragment"-->
-    <!--        app:layout_constraintVertical_bias="0.5" />-->
-
-<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/textView"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="Hello world!"-->
-    <!--        app:layout_constraintBottom_toTopOf="@+id/container"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="0.498"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        app:layout_constraintVertical_bias="0.5" />-->
-<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

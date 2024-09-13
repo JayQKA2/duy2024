@@ -2,7 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#7F7FF0"
+    android:background="#F8F19A"
     android:orientation="vertical">
 
     <LinearLayout
@@ -21,7 +21,7 @@
             android:layout_weight="3"
             android:gravity="center"
             android:text="MON"
-            android:textColor="@color/black">
+            android:textColor="@color/Black">
         </TextView>
 
         <ImageView
@@ -57,7 +57,7 @@
             android:layout_weight="3"
             android:gravity="center"
             android:text="TUE"
-            android:textColor="@color/black">
+            android:textColor="@color/Black">
         </TextView>
 
         <ImageView
@@ -93,7 +93,7 @@
             android:layout_weight="3"
             android:gravity="center"
             android:text="WED"
-            android:textColor="@color/black">
+            android:textColor="@color/Black">
 
         </TextView>
 
@@ -132,7 +132,7 @@
             android:layout_weight="3"
             android:gravity="center"
             android:text="THU"
-            android:textColor="@color/black">
+            android:textColor="@color/Black">
 
         </TextView>
 
@@ -171,7 +171,7 @@
             android:layout_weight="3"
             android:gravity="center"
             android:text="FRI"
-            android:textColor="@color/black">
+            android:textColor="@color/Black">
 
         </TextView>
 
@@ -209,7 +209,7 @@
             android:layout_weight="3"
             android:gravity="center"
             android:text="SAT"
-            android:textColor="@color/black">
+            android:textColor="@color/Black">
         </TextView>
 
         <ImageView
@@ -246,7 +246,7 @@
             android:layout_weight="3"
             android:gravity="center"
             android:text="SUN"
-            android:textColor="@color/black">
+            android:textColor="@color/Black">
 
         </TextView>
 
@@ -284,7 +284,7 @@
             android:layout_weight="3"
             android:gravity="center"
             android:text="MON"
-            android:textColor="@color/black">
+            android:textColor="@color/Black">
 
         </TextView>
 
@@ -322,7 +322,7 @@
             android:layout_weight="3"
             android:gravity="center"
             android:text="TUE"
-            android:textColor="@color/black">
+            android:textColor="@color/Black">
 
         </TextView>
 
@@ -358,7 +358,7 @@
             android:layout_weight="3"
             android:gravity="center"
             android:text="WED"
-            android:textColor="@color/black">
+            android:textColor="@color/Black">
 
         </TextView>
 

@@ -31,6 +31,7 @@ public class WeatherActivity extends AppCompatActivity {
 //        getSupportFragmentManager().beginTransaction().add(R.id.container, firstFragment).commit();
         setContentView(R.layout.activity_weather);
 
+
         ViewPager viewPager = findViewById(R.id.view_pager);
         FragmentPagerAdapter adapter = new WeatherAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
@@ -38,10 +39,10 @@ public class WeatherActivity extends AppCompatActivity {
         TabLayout tabLayout = findViewById(R.id.tab);
         tabLayout.setupWithViewPager(viewPager);
 
-        tabLayout.getTabAt(0).setText("View");
-        tabLayout.getTabAt(1).setText("Ha Noi");
-        tabLayout.getTabAt(2).setText("Paris");
-        tabLayout.getTabAt(3).setText("Spain");
+        tabLayout.getTabAt(0).setText(getString(R.string.tab_view));
+        tabLayout.getTabAt(1).setText(getString(R.string.tab_hanoi));
+        tabLayout.getTabAt(2).setText(getString(R.string.tab_paris));
+        tabLayout.getTabAt(3).setText(getString(R.string.tab_spain));
     }
 
     @Override
